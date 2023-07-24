@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* Navigation bar */
+
+.navbars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.text{
+    font-weight: bold; 
+}
+
+li:hover{
+    display: block;
+    color: white;
+  
+    padding: 1px 2px;
+    font-size:1.1rem;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 40px;
+
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 18px 19px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    font-size: 1.3rem;
+}
+
+/* Intro Section */
+
+.introSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 32rem;
+}
+
+.introSection::before {
+    background: url("https://res.cloudinary.com/dffa46c5u/image/upload/v1683526438/scott-graham-5fNmWej4tAA-unsplash_cqye7v.jpg") no-repeat center/cover;
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.introSection h1 {
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.introSection p {
+
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+
+/* Services Section */
+
+
+.service {
+    display: flex;
+    margin: 34px;
+}
+
+.service .box {
+    /* border: 2px solid orange; */
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 22px 6px;
+    background-color: #f8c293;
+}
+
+.imgs{
+    width: 250px;
+    height: 200px;
+}
+.service .box img {
+    height: 10rem;
+    margin: auto;
+    display: block;
+}
+
+/* Clients Section */
+
+.client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}
+
+.client-item {
+    padding: 34px;
+    text-align: center;
+}
+
+.client-item p {
+    margin: 5px 2px;
+}
+
+/* Contact Section */
+
+#contact {
+    background-color: #f8c293;
+
+}
+
+#contact h2 {
+    padding: 20px;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 23px;
+    padding-bottom: 34px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.contact-box form {
+    width: 48%;
+}
+
+.contact-box label {
+    font-size: 1.3rem;
+
+}
+
+
+/* Footer  */
+
+footer {
+    background: black;
+    color: white;
+    padding: 0.8rem;
+}
+
+#footerText a {
+    color: white;
+    text-decoration: none;
+}
+
+#footerText a:hover {
+    color: #e4700d;
+}
+
+#social a i {
+    align-items: center;
+    padding: 0.9rem 1.2rem;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-size: 2.8rem;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 1px solid white;
+    background-color: #e4700d;
+    margin: 16px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn a:hover{
+    color: black;
+}
+
+.btn:hover {
+    background-color: #f1e8e0;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Responsiveness Phone structure */
+
+@media screen and (max-width: 1050px) {
+    /* Navigation Section */
+
+    #navbar {
+        flex-direction: column;
+    }
+
+    /* Intro Section */
+
+
+
+    .introSection h1 {
+        font-size: 2.1rem;
+        font-weight: bolder;
+    }
+
+    /* services Section */
+
+    .service {
+        flex-direction: column;
+    }
+
+    /* Clients Section */
+    .client {
+        flex-direction: column;
+        height: 100%;
+
+    }
+
+    /* Contact Us Section */
+
+    .contact-box form {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 912px) {
+    .introSection {
+        height: 55rem;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 820px) {
+    .introSection {
+        height: 49rem;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 768px) {
+    .introSection {
+        height: 49rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .introSection {
+        height: 35rem;
+    }
+
+    #navbar ul li a {
+        font-size: 1rem;
+        padding: 10px 9px;
+    }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 280px) {
+    .introSection {
+        height: 25rem;
+    }
+
+    .introSection h1 {
+        font-size: 1.4rem;
+        font-weight: bolder;
+    }
+
+    .introSection p {
+        font-size: 0.9rem;
+        font-weight: bolder;
+    }
+
+    #navbar ul li a {
+        font-size: 0.8rem;
+        padding: 10px 9px;
+    }
+
+    .contact-box form {
+        width: 78%;
+    }
+}
